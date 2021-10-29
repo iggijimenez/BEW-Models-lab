@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+You are visiting the homepage.
+
+<!-- TODO: Display a list of users here, with each linking to their profile -->
+<div>
+    <p><strong>Description:</strong>{{b1}}</p>
+    <p><strong>All users:</strong>{{all_users|length}}</p>
+    <p class="small-text">
+        {{event.guests|length}} people are attending
+    </p>
+</div>
+
+{% endblock %}
